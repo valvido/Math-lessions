@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math lessons</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo"><img src="/img/logo.png"></a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"> </i>
+            </button>
+            <ul class="navbar__menu" id="navbar__menu">
+                <li class="navbar__itm" id="navbar__itm"><a href="#home" id="navbar__links">Home</a></li>
+                <li class="navbar__itm" id="navbar__itm"><a href="#about" id="navbar__links">About</a></li>
+                <li class="navbar__itm" id="navbar__itm"><a href="#services" id="navbar__links">Services</a></li>
+                <li class="navbar__btn" id="navbar__itm"><a href="#sign-up" id="navbar__links">Sign up</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <!--Home-->
+    <div class="home" id="home">
+        <div class="home__container">
+            <h1 class="home__heading">No. 1 Place to <span>learn Math</span></h1>
+            <p class="home__description">Let's succeed together</p>
+            <button class="main__btn">
+                <a href="#sign-up">Start</a>
+            </button>
+        </div>
+    </div>
+    
+
+    <!--About-->
+    <div class="about__container">
+        <h2 class="about__header">Our Mission</h2>
+        <ul class="mission__container">
+            <li class="professional" id="list_itm">
+                <article>
+                    <h3>SIMPLIFY</h3>
+                    <p>Since 2000, I’ve been providing professional consulting services to clients 
+                        from San Francisco and beyond.
+                        From strategic planning to innovative solutions, my focus 
+                        is always on building an efficient and results-driven relationship. 
+                        I’ll work with you to create a customized plan of action for yourself or your 
+                        organization.</p>
+                    </article>
+                </li>
+            <li class="results" id="list_itm"><article><h3>MOTIVATE</h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at tincidunt eros. Sed pretium porttitor rhoncus. Aliquam auctor pulvinar ante eget faucibus. Phasellus viverra nibh id facilisis porta. Mauris at blandit eros. Nullam at volutpat sapien. Phasellus hendrerit fringilla sapien, ac accumsan sapien bibendum id. Nunc volutpat ultrices dapibus.</article></li>
+            <li class="customized" id="list_itm"><article><h3>UNDERSTAND</h3> <p>In varius lectus ac arcu ultricies consectetur. Praesent non tortor imperdiet, lobortis sapien elementum, porttitor odio. Fusce ut purus rutrum, porttitor erat ac, consequat felis. Proin ac tincidunt libero. Suspendisse dapibus auctor elit, in dapibus orci posuere et. In nec ex blandit, mollis nisl non, rhoncus eros. </p></article></li>
+        </ul>
+    </div>
+
+    <!--Services-->
+
+    <div class="sevices__container">
+        <h2 class="service__header">Our Service</h2>
+        <ul class="services">
+            <li id="list_itm">
+                <img src="/img/1-1_lessons.png" class="service__img">
+                <h3>1-1 <br>lessons</h3>
+                <hr class="ruler">
+                <ul class="service__list">
+                    <li class="service__itm">1 h</li>
+                    <li class="service__itm">19,99 USD</li>
+                    <li><button class="main__btn" id="service__btn">Book</button>
+                    </li></ul></li>
+            <li id="list_itm">
+                <img src="/img/application.png" class="service__img">
+                <h3>College Application Guidance</h3><hr class="ruler">
+                <ul class="service__list">
+                    <li class="service__itm">1 h</li>
+                    <li class="service__itm">15,99 USD</li>
+                    <li><button class="main__btn" id="service__btn">Book</button></li>
+                </ul>
+            </li>
+            <li id="list_itm">
+                <img src="/img/consulting.png" class="service__img">
+                <h3>Educational <br> Counseling</h3>
+                <hr class="ruler">
+                <ul class="service__list">
+                    <li class="service__itm">1 h</li>
+                    <li class="service__itm">25,99 USD</li>
+                    <li><button class="main__btn" id="service__btn">Book</button></li></ul></li>
+        </ul>
+
+    </div>
+
+    <!--Sign up-->
+    <div class="sign__up" >
+        <div class="information">
+            <div class="text">
+                <h1 class="signup__heading">Contact us</h1>
+                    <ul class="info">
+                        <li>66 Perry St, New York, NY 10014</li>
+                        <li>info@gmail.com</li>
+                        <li>516-948-0661</li>
+                    </ul>
+            </div>
+                <form class="form__container">
+                    <input type="text" class="form__item" id="form__name" placeholder="Name" required>
+                    <input type ="text" class="form__item" id="form__adress" placeholder="Adress" required>
+                    <div class="form__contact">
+                        <input type="email" class="form__item" id="form__email" placeholder="Email" required>
+                        <input type="" class="form__item" id="form__number" placeholder="Phone" required>
+                    </div>
+                    <input type="tel" class="form__item" id="form__subject" placeholder="Subject" required>
+                    <textarea placeholder="Type your message here..." class="form__item" id="form__message" cols="30" rows="10"></textarea>
+                    <div class="form__btns">
+                        <button type="reset" class="main__btn" id="submit__btn">Clear</button>
+                        <button type="submit" class="main__btn" id="submit__btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="map__container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.2135170049414!2d-74.00603608467092!3d40.735327044125036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25994f9bd410f%3A0xae66b1c01fc7517a!2s66%20Perry%20St%2C%20New%20York%2C%20NY%2010014%2C%20Sjedinjene%20Ameri%C4%8Dke%20Dr%C5%BEave!5e0!3m2!1shr!2shr!4v1633272599032!5m2!1shr!2shr" 
+             style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+        <p>©2021 MathLessons</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

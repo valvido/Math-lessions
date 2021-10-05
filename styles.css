@@ -1,0 +1,433 @@
+*{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #0d1525;
+    color: white;
+}
+
+#navbar__logo img{
+    height: 70px;
+    width:50px;
+    margin-left: 30%;
+    margin-top: 25%;
+}
+
+.navbar__container{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #0d1525;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.navbar__menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#navbar__links{
+    text-decoration:none;
+    color:white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px auto; /*kak da mi se ti elementi liste
+                    strechoutaju kad se ekran povecava? */
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+#navbar__links.active,#navbar__links:hover{
+    border: 1px solid teal;
+    color: rgb(45, 221, 221);
+    transition: .5s;
+}
+
+.hamburger{
+    display: none;
+    padding: 30px;
+    background-color: transparent;
+    border:0;
+    color:white; 
+    font-size:25px;
+    cursor:pointer;
+}
+
+.hamburger:hover{
+    color: rgb(45, 221, 221);
+    transition: .5s;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+.home{
+    display: flex;
+    align-items: start;
+    color:white;
+    height: 100%;
+    background-image: url(img/background-dektop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #131f37;
+    padding: 40px 30px;
+    margin-top: 73px;
+    background-position: bottom;
+}
+
+.home__container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: left;
+}
+
+.home__heading{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    font-size: 50px;
+
+}
+
+.home__heading span{
+    font-size:90px;
+    text-transform: uppercase;
+}
+
+
+.home__description{
+    font-size: 45px;
+    margin-top: 40px;
+    padding: auto;
+    margin-left: -100px;
+ 
+}
+
+.main__btn{
+    padding: 16px 45px;
+    background-color: rgb(45, 221, 221);
+    border: 3px solid teal;
+    border-width: 3px;
+    border-radius: 50px;
+    outline: none;
+    box-shadow: insert 0 0 0 0 #dd6357;
+    transition: ease-out .5s;
+    margin-top: 50px;
+    margin-left: -180px;
+    color:#131f37;
+    font-size: 20px;
+}
+
+.main__btn:hover{
+    box-shadow: inset 300px 0 125px 0 #dd6357;
+    border-color: tomato;
+    color:rgb(112, 47, 36);
+}
+
+.main__btn a{
+    color:#131f37;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about__header{
+    text-align: center;
+    font-size: 50px;
+    margin-top: -200px;
+    padding: 40px;
+    text-transform: uppercase;
+}
+
+.mission__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#list_itm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    list-style: none;
+    max-width: 300px;
+    border: 1px solid teal;
+    padding:12px auto;
+    margin: 12px;
+}
+
+#list_itm h3{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 27px;
+}
+
+#list_itm article{
+    text-align: center;
+    line-height: 25px;
+    padding: 20px;
+}
+
+#list_itm:hover{
+    border-color: #dd6357;
+    transition: .5s;
+    position:relative;
+    top: -2px;
+}
+
+.sevices__container{
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px;
+    padding: 20px;
+    background-color:#131f37;
+}
+
+.service__header{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.service__img{
+    width: 300px;
+    height: 330px;
+    margin-bottom: 20px;
+}
+
+.ruler{
+    position: relative;
+    height: 0.1px;
+    width: 250px;
+    align-self:center;
+    margin: 0;   
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(161, 161, 161, 0), rgba(255, 255, 255, 0.883), rgba(255, 255, 255, 0));
+
+}
+
+.service__list{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 280px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    line-height: 25px;
+    
+}
+
+#service__btn{
+    margin: 25px 0 0 0;
+}
+
+.sign__up{
+    margin: 300px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#submit__btn{
+    margin:0;
+}
+
+.information{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    min-width: 100px;
+    flex-grow: 1;
+}
+
+.text{
+    padding: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.text h1{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.text li{
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.form__container{
+    padding:30px;
+    background-color:#131f37;
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+    flex-wrap: none;
+}
+
+.form__contact{
+    display: flex;
+}
+
+.form__contact input{
+    flex-grow: 1;
+}
+
+.form__btns{
+    display: flex;
+}
+
+.form__btns button{
+    flex-grow: 1;
+}
+
+.form__item{
+    background-color:#131f37;
+    border: 3px solid teal;
+    border-width: 3px;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom:10px;
+    height:50px;
+}
+
+
+
+
+
+/*Mobile screen*/
+@media screen and (max-width: 699px) {
+    /*Kako napraviti da menu padne smooth dolje kad stisnem hamburger?*/ 
+    .navbar__menu{
+        display: none;
+        flex-direction:column;
+        width:100%;
+    }
+
+    .navbar__menu.show{
+        display:flex;
+    }
+
+    .hamburger{
+        display: block;
+        padding: 20px;
+        z-index: 1000;
+    }
+     
+    #navbar__logo img{
+        height: 65px;
+        width:45px;
+        margin-left: 25%;
+        margin-top: 20%;
+        z-index: 1000;
+    }
+    #navbar__itm{
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    #navbar__links.active,#navbar__links:hover{
+        border: none;
+        color: rgb(45, 221, 221);
+        transition: .5s;
+        z-index: 1000;
+
+    }
+
+    .home{
+        display: flex;
+        background-image: url(img/bacground-mobile.jpg);
+       background-position: bottom;
+    }
+    .home__heading{
+        font-size: 40px;
+        text-align: center;
+        line-height: 80px;
+        font-weight: 40;
+    }
+
+    .home__heading span{
+        font-size: 70px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .home__description{
+        margin-top: 30px;
+        font-size: 35px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .main__btn{
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+    .main__btn a{
+        text-decoration: none;
+        font-size: 40px;
+
+    }
+}
+
+.map__container{
+    display: flex;
+    margin: 0px 60px 60px 60px;
+}
+
+.map__container iframe{
+    flex-grow:1;
+    height:300px;
+}
+
+
+
+
+.home__container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+
+
